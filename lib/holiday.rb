@@ -73,10 +73,10 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.each do |season, holiday_arr|
-    puts "#{season}:"
+    puts "#{season}:"binding.pry
     holiday_arr.each do |holiday, item|
       holiday_string = "#{holiday.capitalize}: "
-      binding.pry
+      
       for i in 0..item.length-1
         holiday_string += "#{item[i]}"
         if i != item.length-1
