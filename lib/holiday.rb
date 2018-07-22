@@ -76,6 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season}:"
     holiday_arr.each do |holiday, item|
       holiday_string = "#{holiday.capitalize}: "
+      binding.pry
       for i in 0..item.length-1
         holiday_string += "#{item[i]}"
         if i != item.length-1
